@@ -7,13 +7,28 @@
   </head>
   <body class="text-gray-500 md:grid md:grid-cols-3">
     <nav>
-      <h1
-        class="font-bold uppercase p-4 border-b border-gray-100 hover:text-gray-700"
-      >
-        <a href="/">Food Ninja</a>
-      </h1>
-      <ul class="p-4">
-        <li class="text-gray-700 font-bold py-2">
+      <div class="p-4 border-b flex justify-between">
+        <h1 class="font-bold uppercase border-gray-100 hover:text-gray-700">
+          <a href="/">Food Ninja</a>
+        </h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 md:hidden cursor-pointer"
+          onclick="toggleMenu()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+      <ul class="p-2 hidden md:block" id="menu">
+        <li class="text-gray-700 font-bold p-2 border-l-4 border-primary">
           <a href="#" class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +47,7 @@
             <span>Home</span>
           </a>
         </li>
-        <li class="text-gray-700 font-bold py-2">
+        <li class="text-gray-700 p-2 border-l-4 border-white">
           <a href="#" class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +66,7 @@
             <span>About</span>
           </a>
         </li>
-        <li class="text-gray-700 font-bold py-2">
+        <li class="text-gray-700 p-2 border-l-4 border-white">
           <a href="#" class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +82,6 @@
                 d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
               />
             </svg>
-
             <span>Contact</span>
           </a>
         </li>
@@ -143,5 +157,15 @@
         <div class="bg-secondary-100 text-secondary-200 btn">Load more</div>
       </div>
     </main>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menu');
+        if (menu.style.display === 'block') {
+          menu.style.display = 'none';
+        } else {
+          menu.style.display = 'block';
+        }
+      }
+    </script>
   </body>
 </html>
