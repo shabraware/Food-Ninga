@@ -553,10 +553,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
 .m-4{
   margin: 1rem;
 }
@@ -587,14 +583,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .justify-center{
@@ -633,10 +621,6 @@ video {
   padding: 1rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -645,16 +629,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-2{
@@ -738,7 +712,27 @@ video {
   color: rgb(136 136 131 / var(--tw-text-opacity));
 }
 
+.btn{
+  cursor: pointer;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 @media (min-width: 768px){
+  .btn--border{
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 99 99 / var(--tw-border-opacity));
+  }
+
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
