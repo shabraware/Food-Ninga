@@ -5,7 +5,7 @@
     <title>Food Ninja</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="text-gray-500 md:grid md:grid-cols-3">
+  <body class="text-gray-500 md:grid md:grid-cols-5">
     <nav>
       <div class="p-4 border-b flex justify-between">
         <h1 class="font-bold uppercase border-gray-100 hover:text-gray-700">
@@ -88,16 +88,16 @@
       </ul>
     </nav>
 
-    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+    <main class="px-16 py-6 bg-gray-100 md:col-span-4">
       <div class="flex justify-center md:justify-end">
         <a
           href="#"
-          class="text-primary mr-2 btn btn--border hover:bg-primary hover:text-white"
+          class="text-primary mr-2 btn btn--border hover:bg-primary hover:text-white transition ease-out duration-500"
           >Log in</a
         >
         <a
           href="#"
-          class="text-primary btn btn--border hover:bg-primary hover:text-white"
+          class="text-primary btn btn--border hover:bg-primary hover:text-white transition ease-out duration-500"
           >Sign up</a
         >
       </div>
@@ -148,12 +148,42 @@
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
           Most Popular
         </h4>
-        <div class="mt-8">
+        <div class="mt-8 grid lg:grid-cols-3 gap-4">
           <!-- cards go here -->
+          <div class="card hover:shadow-xl transition-shadow">
+            <img src="img/stew.jpg" alt="stew" class="w-full" />
+            <div class="m-4">
+              <span class="font-bold block">5 Bean Chili Stew</span>
+              <span class="text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl transition-shadow">
+            <img src="img/noodles.jpg" alt="noodles" class="w-full" />
+            <div class="m-4">
+              <span class="font-bold block">Veg Noodles</span>
+              <span class="text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl transition-shadow">
+            <img src="img/curry.jpg" alt="curry" class="w-full" />
+            <div class="m-4">
+              <span class="font-bold block">Tofu Curry</span>
+              <span class="text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center mt-8">
         <div class="bg-secondary-100 text-secondary-200 btn">Load more</div>
       </div>
     </main>
