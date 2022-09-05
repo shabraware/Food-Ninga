@@ -7,8 +7,6 @@ The project for The Net Ninga TailwindCSS Tutorials
 - **HTML**
 - **TailwindCSS**
 
----
-
 ## 📷 Responsiveness
 
 - ### Desktop Screen
