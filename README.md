@@ -1,6 +1,6 @@
 # Food Ninga
 
-## The project for The Net Ninga TailwindCSS Tutorials
+The project for The Net Ninga TailwindCSS Tutorials
 
 ## 💻 Built With
 
